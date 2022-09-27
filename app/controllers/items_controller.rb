@@ -32,6 +32,14 @@ class ItemsController < ApplicationController
     end
   end
 
+  def destroy
+    if @item.destroy
+      redirect_to items_path
+    else
+      render 'show'
+    end
+  end
+
   private
   def item_params
     params.require(:item).permit(:image, :university_name, :faculty, :department, :grade, :condition, :name, :explain, :price)
