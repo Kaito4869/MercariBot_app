@@ -1,0 +1,47 @@
+<%= render "shared/header" %>
+<main>
+  <div class="show-container">
+    <%=image_tag @item.image, class: "show-image"%>
+    <div class="show-contents">
+      <p class="show-name"><%= @item.name %></p>
+      <p class="show-price">¥<%= @item.price%></p>
+      <div class="show-icons">
+        <%=link_to image_tag("good.png", class:"show-icon"), "#"%>
+        <%=link_to image_tag("comment.png", class:"show-icon"), "#"%>
+        <%=link_to image_tag("edit.png", class:"show-icon"), edit_item_path(@item)%>
+        <%=link_to image_tag("destroy.png", class:"show-icon"), item_path(@item), method: :delete %>
+      </div>
+      <div class="purchase-form">
+        <p class="purchase-btn"><%= link_to "購入手続きへ", "#"%></p>
+      </div>
+      <div>
+        <h2 class="explain-title">商品の説明</h2>
+        <p class="show-explain"><%= @item.explain%></p>
+      </div>
+      <div class="information-container">
+        <h2 class="show-information">商品の情報</h2>
+        <div class="information-content">
+          <p class="information-title">大学</p>
+          <p class="information-name"><%= @item.university_name%></p>
+        </div>
+        <div class="information-content">
+          <p class="information-title">学部</p>
+          <p class="information-name"><%= @item.faculty%></p>
+        </div>
+        <div class="information-content">
+          <p class="information-title">学科</p>
+          <p class="information-name"><%= @item.department%></p>
+        </div>
+        <div class="information-content">
+          <p class="information-title">学年</p>
+          <p class="information-name"><%= @item.grade%></p>
+        </div>
+        <div class="information-content">
+          <p class="information-title">商品の状態</p>
+          <p class="information-name"><%= @item.condition%></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<%= render "shared/footer" %>
