@@ -1,0 +1,24 @@
+<header>
+  <div class="header-top">
+    <div class="header-left">
+      <div class="icon-container">
+        <%= link_to image_tag("Mercari_Bot.png", class:"Mercari_bot_icon"), items_path %>
+      </div>
+      <div class="search-form">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <form method="get" action="#" class="search_container">
+          <input type="text" size="25" placeholder="なにをお探しですか？" class="search-box">
+          <input type="submit" value="&#xf002">
+        </form>
+      </div>
+    </div>
+    <div class="header-rights">
+      <div class="header-right">
+        <%= link_to "お知らせ", "#", class: "header-nav" %>
+        <%= link_to "ログイン", "#", class: "header-nav" %>
+        <%= link_to "会員登録", "#", class: "header-nav" %>
+        <%= link_to "出品", "#", class: "exhibit" %>
+      </div>
+    </div>
+  </div>
+</header>

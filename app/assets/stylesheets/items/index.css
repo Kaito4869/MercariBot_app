@@ -1,0 +1,209 @@
+@media screen and (max-width:639px) {
+  .main-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .bottom-nav:hover {
+    color: #46EEFF;
+  }
+
+  .main-image {
+    border-top: 1px solid #333333;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mercari_image {
+    margin-top: 10px;
+    width: 90%;
+    height: 120px;
+  }
+
+  .recommened {
+    margin: 10px 0 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #777777;
+  }
+
+  .item-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+
+  .image-content {
+    width: 20%;
+    position: relative;
+    margin: 0 10px 20px 10px;
+  }
+
+  .item {
+    border: 1px;
+    background-color: #EEEEEE;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  .item-price {
+    position: absolute;
+    bottom: 25px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #333333;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .item-name {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width:640px) and (max-width:1023px) {
+  .main-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .bottom-nav:hover {
+    color: #46EEFF;
+  }
+
+  .main-image {
+    border-top: 1px solid #333333;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mercari_image {
+    margin-top: 10px;
+    width: 90%;
+    height: 200px;
+  }
+
+  .recommened {
+    margin: 20px 0 10px 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #777777;
+  }
+
+  .item-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .image-content {
+    width: 20%;
+    position: relative;
+    margin: 0 10px 20px 10px;
+  }
+
+  .item {
+    border: 1px;
+    background-color: #EEEEEE;
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+  }
+
+  .item-price {
+    position: absolute;
+    bottom: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #333333;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .item-name {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .main-menu {
+    margin: 0 0 0 80px;
+  }
+
+  .bottom-nav {
+    margin-left: 30px;
+    font-weight: bold;
+  }
+
+  .bottom-nav:hover {
+    color: #46EEFF;
+  }
+
+  .main-image {
+    margin-top: 20px;
+    border-top: 1px solid #333333;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mercari_image {
+    width: 90%;
+    height: 300px;
+  }
+
+  .recommened {
+    margin: 30px 0 20px 70px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #777777;
+  }
+
+  .item-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 70px;
+  }
+
+  .image-content {
+    width: 20%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .item {
+    border: 1px;
+    background-color: #EEEEEE;
+    height: 235px;
+    width: 235px;
+    border-radius: 5px;
+  }
+
+  .item-price {
+    position: absolute;
+    bottom: 49px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #333333;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .item-name {
+    margin-top: 10px;
+  }
+}

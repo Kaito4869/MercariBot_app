@@ -1,0 +1,250 @@
+@media screen and (max-width:639px) {
+  .icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Mercari_bot_icon {
+    height: 40px;
+    width: 90px;
+    margin: 10px 0;
+  }
+
+  .search-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999999;
+    padding: 3px 10px 0;
+    border-radius: 5px;
+    height: 1.5em;
+    width: 280px;
+    overflow: hidden;
+  }
+
+  .search_container input[type="text"]{
+    border: none;
+    height: 1.5em;
+  }
+
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    border: none;
+    color: #999999;
+    position: absolute;
+    width: 2.5em;
+    height: 3.0em;
+    right:0px;
+    top: -9px;
+    outline : none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7px;
+  }
+
+  .search-box {
+    font-size: 13px;
+    padding: 0 0 5px 0;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .header-nav {
+    padding: 8px 4px;
+    border-radius: 5px;
+  }
+
+  .header-nav:hover {
+    background-color: #EEEEEE;
+    padding: 8px 4px;
+    border-radius: 5px;
+  }
+
+  .exhibit {
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #46EEFF;
+  }
+}
+
+@media only screen and (min-width:640px) and (max-width:1023px) {
+  .icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Mercari_bot_icon {
+    height: 80px;
+    width: 160px;
+    margin: 10px 0 20px;
+  }
+
+  .search-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    padding: 0 10px;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 450px;
+    overflow: hidden;
+  }
+
+  .search_container input[type="text"]{
+    border: none;
+    height: 1.8em;
+  }
+
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    border: none;
+    color: #999999;
+    position: absolute;
+    width: 3.0em;
+    height: 3.5em;
+    right:0px;
+    top: -7px;
+    outline : none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+
+  .search-box {
+    font-size: 20px;
+    padding: 8px 0 5px 0;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .header-nav {
+    font-size: 20px;
+    padding: 8px 4px;
+    border-radius: 5px;
+  }
+
+  .header-nav:hover {
+    font-size: 20px;
+    background-color: #EEEEEE;
+    padding: 8px 4px;
+    border-radius: 5px;
+  }
+
+  .exhibit {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #46EEFF;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  header {
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-left {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+  }
+
+  .Mercari_bot_icon {
+    height: 60px;
+    width: 130px;
+    margin-right: 10px;
+  }
+
+  .search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    padding: 3px 10px;
+    border-radius: 5px;
+    height: 2.3em;
+    width: 500px;
+    overflow: hidden;
+  }
+
+  .search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+  }
+
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    border: none;
+    color: #999999;
+    position: absolute;
+    width: 2.5em;
+    height: 3.0em;
+    right:0px;
+    top: -3px;
+    outline : none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7px;
+  }
+
+  .header-nav {
+    margin-right: 20px;
+    padding: 15px 8px;
+    border-radius: 5px;
+  }
+
+  .header-nav:hover {
+    background-color: #EEEEEE;
+    padding: 15px 8px;
+    border-radius: 5px;
+  }
+
+  .exhibit {
+    margin-right: 20px;
+    background-color: #46EEFF;
+    padding: 12px 17px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+}
