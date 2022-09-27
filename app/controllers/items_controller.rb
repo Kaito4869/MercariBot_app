@@ -21,6 +21,17 @@ class ItemsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @item.update(item_params)
+      redirect_to items_path
+    else
+      render 'edit'
+    end
+  end
+
   private
   def item_params
     params.require(:item).permit(:image, :university_name, :faculty, :department, :grade, :condition, :name, :explain, :price)
