@@ -1,0 +1,230 @@
+@media screen and (max-width:639px)  {
+  .new-page {
+    text-align: center;
+    border-top: 1px solid #333333;
+  }
+
+  .exhibit-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+  }
+
+  .image-form {
+    display: flex;
+    justify-content: center;
+    border: 1px dashed #333333;
+    display: inline-block;
+    padding: 20px 70px;
+    position: relative;
+  }
+
+  .file-form {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .item-explain {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 5px;
+  }
+
+  .exhibit-item {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .explain-form {
+    border: 1px solid #333333;
+    height: 30px;
+    width: 250px;
+    margin-top: 5px;
+  }
+
+  .exhibit-btn-form {
+    margin: 40px 0;
+  }
+
+  .exhibit-btn {
+    background-color: #46EEFF;
+    padding: 10px 150px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .submit-btn {
+    border: 1px solid #333333;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #46EEFF;
+    border-radius: 10px;
+  }
+
+  .submit-btn:hover {
+    background-color: #8EF1FF;
+  }
+}
+
+@media only screen and (min-width:640px) and (max-width:1023px) {
+  .new-page {
+    text-align: center;
+    border-top: 1px solid #333333;
+  }
+
+  .exhibit-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0;
+  }
+
+  .image-form {
+    display: flex;
+    justify-content: center;
+    border: 1px dashed #333333;
+    display: inline-block;
+    padding: 40px 200px;
+    position: relative;
+  }
+
+  .file-form {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .item-explain {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 5px;
+  }
+
+  .exhibit-item {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .explain-form {
+    border: 1px solid #333333;
+    height: 50px;
+    width: 500px;
+    margin-top: 5px;
+  }
+
+  .exhibit-btn-form {
+    margin: 40px 0;
+  }
+
+  .exhibit-btn {
+    background-color: #46EEFF;
+    padding: 10px 150px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .submit-btn {
+    border: 1px solid #333333;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #46EEFF;
+    border-radius: 10px;
+  }
+
+  .submit-btn:hover {
+    background-color: #8EF1FF;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .new-page {
+    text-align: center;
+    border-top: 1px solid #333333;
+  }
+
+  .exhibit-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0;
+  }
+
+  .exhibit-item {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .image-form {
+    display: flex;
+    justify-content: center;
+    border: 1px dashed #333333;
+    display: inline-block;
+    padding: 40px 200px;
+    position: relative;
+  }
+
+  .file-form {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .item-explain {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 5px;
+  }
+
+  .explain-form {
+    border: 1px solid #333333;
+    height: 50px;
+    width: 500px;
+    margin-top: 5px;
+  }
+  
+  .exhibit-btn-form {
+    margin: 40px 0;
+  }
+
+  .exhibit-btn {
+    background-color: #46EEFF;
+    padding: 10px 150px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .submit-btn {
+    border: 1px solid #333333;
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #46EEFF;
+    border-radius: 10px;
+  }
+
+  .submit-btn:hover {
+    background-color: #8EF1FF;
+  }
+}
