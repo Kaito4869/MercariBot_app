@@ -1,0 +1,53 @@
+<%= render "shared/header" %>
+<main>
+  <%= form_with(model: @item, local: true) do |form| %>
+    <div class="new-page">
+      <h1 class="exhibit-title">商品の出品</h1>
+      <div>
+        <p class="exhibit-item">出品画像(最大10枚)</p>
+        <div class="image-form">
+          画像を選択する
+          <%= form.file_field :image, class: "file-form"  %>
+        </div>
+      </div>
+      <h2 class="item-explain">商品の詳細</h2>
+      <div>
+        <p class="exhibit-item">大学</p>
+        <%= form.text_field :university_name, class: "explain-form" %> 
+      </div>
+      <div>
+        <p class="exhibit-item">学部</p>
+        <%= form.text_field :faculty, class:"explain-form" %> 
+      </div>
+      <div>
+        <p class="exhibit-item">学科</p>
+        <%= form.text_field :department, class:"explain-form" %> 
+      </div>
+      <div>
+        <p class="exhibit-item">学年</p>
+        <%= form.text_field :grade, class:"explain-form" %> 
+      </div>
+      <div>
+        <p class="exhibit-item">商品の状態</p>
+        <%= form.text_field :condition, class:"explain-form" %> 
+      </div>
+      <h2 class="item-explain">商品名と説明</h2>
+      <div>
+        <p class="exhibit-item">商品名</p>
+        <%= form.text_field :name, class:"explain-form" %> 
+      </div>
+      <div>
+        <p class="exhibit-item">商品の説明</p>
+        <%= form.text_field :explain, class:"explain-form" %> 
+      </div>
+      <h2 class="item-explain">販売価格</h2>
+      <div>
+        <p class="exhibit-item">販売価格(¥300~9,999,999)</p>
+        <%= form.text_field :price, class: "explain-form" %> 
+      </div>
+      <div>
+        <%= form.submit "出品" ,class:"submit-btn" %>
+      </div>
+  <% end %> 
+</main>
+<%= render "shared/footer" %>

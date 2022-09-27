@@ -11,5 +11,14 @@
   <div>
     <p class="recommened">おすすめの商品</p>
   </div>
+  <div class="item-container">
+    <% @items.each do |item| %>
+      <div class="image-content">
+        <%= link_to image_tag(item.image, class: "item"), item_path(item) %>
+        <p class="item-price">¥<%= item.price %></p>
+        <p class="item-name"><%= item.name %></p>
+      </div>
+    <% end %>
+  </div>
 </main>
 <%= render "shared/footer"%>
