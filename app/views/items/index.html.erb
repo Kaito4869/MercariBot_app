@@ -1,0 +1,15 @@
+<%= render "shared/header" %>
+<main>
+  <div class="main-menu">
+    <%= link_to "おすすめ", "#", class: "bottom-nav"%>
+    <%= link_to "マイリスト", "#", class: "bottom-nav"%>
+    <%= link_to "ピックアップ", "#", class: "bottom-nav"%>
+  </div>
+  <div class="main-image">
+    <%= image_tag("mercari.jpeg", class:"mercari_image")%>
+  </div>
+  <div>
+    <p class="recommened">おすすめの商品</p>
+  </div>
+</main>
+<%= render "shared/footer"%>
