@@ -276,4 +276,8 @@
   .information-name {
     font-size: 18px;
   }
+
+  .information-name:hover {
+    color: #46EEFf;
+  }
 }
