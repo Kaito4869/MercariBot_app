@@ -1,0 +1,24 @@
+<%= render "shared/header" %>
+<main>
+  <div class="user-profile">
+    <div class="user-nickname">
+      <%= @user.nickname%>
+    </div>
+    <% if current_user.id == @user.id %>
+      <div>
+        <%=link_to image_tag("edit.png", class:"show-icon"), edit_user_registration_path %>
+      </div>
+    <% end %>
+  </div>
+  <div class="user-items">
+    <p class="exhibit-item-title">出品した商品</p>
+      <% @items.each do |item| %>
+        <div class="image-content">
+          <%= link_to image_tag(item.image, class: "item"), item_path(item) %>
+          <p class="item-price">¥<%= item.price %></p>
+          <p class="item-name"><%= item.name %></p>
+        </div>
+      <% end %>
+  </div>
+</main>
+<%= render "shared/footer" %>

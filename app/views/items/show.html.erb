@@ -6,14 +6,22 @@
       <p class="show-name"><%= @item.name %></p>
       <p class="show-price">¥<%= @item.price%></p>
       <div class="show-icons">
-        <%=link_to image_tag("good.png", class:"show-icon"), "#"%>
-        <%=link_to image_tag("comment.png", class:"show-icon"), "#"%>
-        <%=link_to image_tag("edit.png", class:"show-icon"), edit_item_path(@item)%>
-        <%=link_to image_tag("destroy.png", class:"show-icon"), item_path(@item), method: :delete %>
+        <% if user_signed_in? %>
+          <%=link_to image_tag("good.png", class:"show-icon"), "#"%>
+          <%=link_to image_tag("comment.png", class:"show-icon"), "#"%>
+          <% if current_user.id == @item.user_id %>
+            <%=link_to image_tag("edit.png", class:"show-icon"), edit_item_path(@item)%>
+            <%=link_to image_tag("destroy.png", class:"show-icon"), item_path(@item), method: :delete %>
+          <% end %>
+        <% end %>
       </div>
-      <div class="purchase-form">
-        <p class="purchase-btn"><%= link_to "購入手続きへ", "#"%></p>
-      </div>
+      <% if user_signed_in? %>
+        <% unless current_user.id == @item.user_id %>
+          <div class="purchase-form">
+            <p class="purchase-btn"><%= link_to "購入手続きへ", "#"%></p>
+          </div>
+        <% end %>
+      <% end %>
       <div>
         <h2 class="explain-title">商品の説明</h2>
         <p class="show-explain"><%= @item.explain%></p>
@@ -40,6 +48,10 @@
           <p class="information-title">商品の状態</p>
           <p class="information-name"><%= @item.condition%></p>
         </div>
+      </div>
+      <div>
+        <h2 class="show-information">出品者</h2>
+        <p class="information-name"><%= link_to(@user.nickname, "/users/#{@user.id}") %></p>
       </div>
     </div>
   </div>
