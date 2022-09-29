@@ -1,0 +1,51 @@
+<header>
+  <div class="icon-container">
+    <%= link_to image_tag("Mercari_Bot.png", class:"mercari_bot_icon"), items_path %>
+  </div>
+</header>
+<main>
+  <div class="registration-title">
+    <h2 class="registration">会員情報の編集</h2>
+  </div>
+  
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |form| %>
+    <div  class="registration-contents">
+      <div class="registration-content">
+        <p class="registration-item">ニックネーム</p>
+        <%= form.text_field :nickname, class: "registration-form" %> 
+      </div>
+      <div class="registration-content">
+        <p class="registration-item">メールアドレス</p>
+        <%= form.text_field :email, class: "registration-form" %> 
+      </div>
+            <div class="registration-content">
+        <p class="registration-item">パスワード</p>
+        <%= form.text_field :password, class: "registration-form" %> 
+      </div>
+            <div class="registration-content">
+        <p class="registration-item">性</p>
+        <%= form.text_field :last_name, class: "registration-form" %> 
+      </div>
+            <div class="registration-content">
+        <p class="registration-item">名</p>
+        <%= form.text_field :first_name, class: "registration-form" %> 
+      </div>
+            <div class="registration-content">
+        <p class="registration-item">性(カナ)</p>
+        <%= form.text_field :last_name_kana, class: "registration-form" %> 
+      </div>
+            <div class="registration-content">
+        <p class="registration-item">名(カナ)</p>
+        <%= form.text_field :first_name_kana, class: "registration-form" %> 
+      <div>
+      </div>
+        <div class="registration-content">
+        <p class="registration-item">生年月日</p>
+        <%= form.text_field :birthday, class: "registration-form" %> 
+      </div>
+      <div>
+        <%= form.submit "更新" ,class:"submit-btn" %>
+      </div>
+    </div>
+  <% end %> 
+</main>
